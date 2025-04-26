@@ -1,0 +1,101 @@
+/*顶部*/
+.container1 {
+    background: #9a9999;
+    color: #fff;
+    height:50px;
+    line-height:50px;
+    border-bottom: #9a9999 3px solid;
+}
+.container1 a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.container1 ul {
+    padding: 0;
+    list-style: none;
+}
+.container1 li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.container1 #branding {
+    float: left;
+    margin-left:145px;
+    font-size:40px;
+    font-weight:bold;
+    padding-top:5px;
+}
+.container1 nav {
+    float: right;
+    margin-top: 10px;
+}
+.container1 .highlight, .container1 .current a {
+    color: #a92c0a;
+    font-weight: bold;
+}
+.container1 a:hover {
+    color: #fff
+    fff;
+}
+/*帮助中心*/
+.container {
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom:40px;
+}
+.help-section {
+    padding: 20px;
+    margin:20px 20px;
+    
+}
+#p1{
+    text-indent: 2em;
+}
+.help-section h2 {
+    color: #4fba54;
+    font-size:30px;
+}
+h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#6ebd72;
+}
+h4{
+    font-size:17px;
+    line-height:25px;
+}
+.help-section p {
+    margin: 10px 0;
+    line-height:25px;
+}
+.faq {
+    margin-top: 20px;
+}
+.faq h3 {
+    margin-top: 10px;
+}
+ul{
+    list-style: circle;
+}
+li{
+    height:30px;
+    margin-left:30px;
+}
+/*底部*/
+footer {
+    background: #4fba54;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    height:40px;
+    width: 100%;
+    font-size:20px;
+    line-height:40px;
+}

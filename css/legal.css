@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #0a750f;
+    --secondary-color: #4a9375;
+}
+body {
+    font-family: '微软雅黑', sans-serif;
+    line-height: 1.8;
+    background: #f8f9fa;
+}
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    
+}.header h1{
+    font-size:30px;
+}
+.header p{
+    font-size:15px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.policy-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 6px solid var(--secondary-color);
+}
+.grid-system {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.law-article {
+    padding: 1.5rem;
+    background: #e3f2fd;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+.highlight {
+    color: #c53030;
+    font-weight: 600;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+.nav a:hover {
+    background: var(--secondary);
+    color: white;
+}
+:root {
+    --primary: #2A5934;
+    --secondary: #4F8D6A;
+    --accent: #C53A2B;
+}
+#footer{
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 2;
+    margin-top:-10px;
+}

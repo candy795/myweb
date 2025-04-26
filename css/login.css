@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+#LOGIN {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%; 
+}
+
+#picture2 {
+    width: 100%;
+    position: relative;
+}
+#picture2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#login {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.login2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.form-group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+label {
+    width: 120px; 
+    margin-right: 10px; 
+    font-size: 16px;
+    color: #fff;
+}
+
+input[type="text"],input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px; 
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+    width: 200px; 
+}
+
+input[type="text"]:focus,input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,84 @@
+/*当前页面*/
+
+#header1{
+    font-size: 15px;
+    color: #45a049;
+    padding-top:60px;
+
+}
+#header1 a{
+    text-decoration: none;
+    color:#45a049;
+}
+main{
+    width:1000px;
+    margin:0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top:20px;
+}
+.title{
+    height:50px;
+    font-size:30px;
+    color:#45a049;
+    padding-top:30px;
+    text-align:center;
+}
+.introduction{
+    display:flex;
+    margin-top:20px;
+}
+.introduction i{
+    font-size:50px;
+    color:rgba(0,0,0,0.1);
+    margin-top:-10px;
+    margin-left:20px;
+    margin-right:10px;
+}
+.introduction span{
+    float:left;
+    color:rgba(0,0,0,0.4);
+    text-indent:2em;
+    padding-right:20px;
+    line-height:25px;
+}
+#left{
+    position:relative;
+    top:-20px;
+}
+#right{
+    position:relative;
+    right:20px;
+    top:20px;
+}
+article{
+    margin-top:40px;
+}
+img{
+    float:right;
+    width:500px;
+    margin-left:20px;
+}
+h{
+    color:rgba(0,0,0,0.4);
+    margin-left:30px;
+}
+p{
+    font-size:23px;
+    text-indent:2em;
+    text-align:left;
+    margin-left:30px;
+    line-height:30px;
+    margin-bottom:10px;
+    font-weight:200;
+}
+/* 底部 */
+#footer{
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 2;
+    margin-top:-10px;
+}

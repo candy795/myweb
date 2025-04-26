@@ -1,0 +1,53 @@
+body{
+    min-width: 1200px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#header{
+    font-size: 15px;
+    color: #45a049;
+    padding-top:10px;
+}
+#header a{
+    text-decoration: none;
+    color:#45a049;
+}
+.passager{
+    max-width:1200px;
+    margin:20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding:20px 30px;
+    
+}
+#head{
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold; 
+    padding-top: 10px;
+}
+#da{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#w{
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 2;
+    line-height:25px;
+    margin:10px 0;
+}
+#p{
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+}
+/* 底部 */
+#footer{
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 2;
+}

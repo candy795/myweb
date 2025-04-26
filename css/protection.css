@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #0a750f;
+    --secondary-color: #4a9375;
+}
+body {
+    font-family: '微软雅黑', system-ui;
+    line-height: 1.8;
+    margin: 0;
+    background: #F5FCF7;
+}
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+.hero h1{
+    font-size:30px;
+}
+.hero p{
+    font-size:15px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+.nav a:hover {
+    background: var(--secondary);
+    color: white;
+}
+.policy-container {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding: 0 2rem;
+}
+.policy-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    border-top: 6px solid var(--secondary);
+    transition: transform 0.3s ease;
+}
+.policy-card:hover {
+    transform: translateY(-5px);
+}
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.data-visual {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #F8FFF9;
+    border-radius: 12px;
+}
+.progress-bar {
+    height: 12px;
+    background: #E0E0E0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+.progress-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 70%;
+    transition: width 0.8s ease;
+}
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--secondary);
+}
+.timeline-item {
+    width: calc(50% - 40px);
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    position: relative;
+}
+.timeline-item:nth-child(odd) {
+    margin-left: auto;
+}
+.law-tag {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: #E8F5E9;
+    border-radius: 20px;
+    margin: 0.5rem;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.law-tag:hover {
+    transform: scale(1.05);
+    background: var(--primary);
+    color: white;
+}
+.interactive-chart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+}
+.chart-item {
+    text-align: center;
+    padding: 1rem;
+    border-left: 3px solid var(--secondary);
+}
+@media (max-width: 768px) {
+    .timeline::before { left: 20px; }
+    .timeline-item { width: calc(100% - 40px); }
+    .nav { flex-wrap: wrap; }
+}
+.content-section {
+padding: 1.5rem;
+background: #F8FAF0;
+border-radius: 8px;
+margin: 1.5rem 0;
+}
+.strategy-list {
+list-style: none;
+padding-left: 0;
+}
+.strategy-list li {
+padding: 1rem;
+margin: 1rem 0;
+background: white;
+border-left: 4px solid var(--secondary);
+}
+.case-study {
+position: relative;
+padding: 1.5rem;
+background: white;
+border: 2px solid var(--primary);
+border-radius: 12px;
+margin: 1.5rem 0;
+}
+.case-badge {
+position: absolute;
+top: -12px;
+left: 20px;
+background: var(--accent);
+color: white;
+padding: 0.3rem 1rem;
+border-radius: 20px;
+font-size: 0.9em;
+}
+.tech-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 2rem;
+padding: 1.5rem;
+}
+.tech-item {
+padding: 1.5rem;
+background: linear-gradient(145deg, #F0FAF4, #FFFFFF);
+border-radius: 12px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+@media (max-width: 768px) {
+.strategy-list li {
+    font-size: 0.95em;
+}
+}
+#footer{
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 2;
+    margin-top:-10px;
+}
