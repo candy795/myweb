@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 动物保护网站</title>
+    <link rel="stylesheet" href="../css/Reset.css">
+    <link rel="stylesheet" href="../css/lianxi.css">
+    <link rel="stylesheet" href="../css/all.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div id="branding">
+                <h1>动物守护者</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li ><a href="help.html">帮助中心</a></li>
+                    <li><a href="about.html">了解网站</a></li>
+                    <li class="current"><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="contact-section">
+            <h2>联系我们</h2>
+            <p>我们非常重视您的反馈和建议。请通过以下方式与我们联系：</p>
+            <h3>联系信息</h3>
+            <p><strong>地址：</strong>xx省xx市xx区xx号</p>
+            <p><strong>电话：</strong>18392752398(周一至周五, 09:00 - 17:00)</p>
+            <p><strong>邮箱：</strong><a href="mailto:contact@animalprotection.org">contact@animalprotection.org</a></p>
+            <h3>在线联系表单</h3>
+            <form action="/submit_form" method="post">
+                <label for="name"><i class="fa-solid fa-user"></i>您的姓名:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email"><i class="fa-solid fa-envelope"></i>您的邮箱:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message"><i class="fa-solid fa-message"></i>您的留言:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">发送</button>
+            </form>
+            <h3><i class="fa-solid fa-location-dot"></i>地图位置</h3>
+            <p>xx省xx市xx区xx号</p>
+        </section>
+    </div>
+
+    <footer>
+        <h>&copy; 2025 动物守护者</h>
+    </footer>
+</body>
+</html>

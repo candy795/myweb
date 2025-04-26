@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物领养</title>
+    <link rel="stylesheet" href="../css/Reset.css">
+    <link rel="stylesheet" href="../css/lingyang.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <script type="text/javascript" src="../script/lingyang.js" async></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="header">
+            <div class="fixed">
+                <div class="tishi">
+                    <i class="fa-regular fa-star"></i>
+                    <span>善待动物，和谐生存</span>
+                 </div>
+                <div id="top_right">
+                    <a href="#">帮助中心</a>&nbsp;&nbsp;
+                    <a href="#">了解网站</a>&nbsp;&nbsp;
+                    <a href="#">联系我们</a>&nbsp;&nbsp;
+                    <a href="login.html">注册/登录</a>&nbsp;&nbsp;
+                </div>
+               
+            </div>
+            
+            <div id="picture1">
+                <img src="../image/p9.jpg" title="保护动物，人人有责">
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li class="menu-item">
+                        <a href="#">服务</a>
+                        <ul class="submenu">
+                            <li><a href="animal-help.html" target="_blank">动物救助服务</a></li>
+                            <li><a href="lingyang.html" target="_blank">动物领养</a></li>
+                            <li><a href="/html/project.html" target="_blank">志愿者项目</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="protect-animal.html">野生动物</a>
+                        
+                    </li>
+                    <li class="menu-item">
+                        <a href="nonprotect-animal.html">非野生动物</a>
+                        
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">动物公益</a>
+                        <ul class="submenu" id="submenu1">
+                            <li><a href="technology1.html" target="_blank">动物保护技术与创新</a></li>
+                            <li><a href="xuanchuan.html" target="_blank">教育宣传</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">新闻</a>
+                        <ul class="submenu">
+                            <li><a href="animal-rescue.html" target="_blank">动物救助与救援</a></li>
+                            <li><a href="against.html" target="_blank">反对野生动物贸易</a></li>
+                            <li><a href="xwfuli.html" target="_blank">动物福利与生活条件</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header1">
+            当前位置：<a href="index.html">服务</a>>>
+            <a href="./lingyang.html">动物领养</a>
+        </div>
+        <div class="raise">
+            
+            <div id="top">
+                <h1>动物领养</h1>
+                
+            </div>
+            
+            <!-- 动物列表 -->
+            <div class="animal-list">
+                <div class="animal-card">
+                    <img src="../image/ly1.png" alt="动物图片">
+                    <div class="details">
+                        <h3>小黑</h3>
+                        <h>种类：狗</h><br>
+                        <h>年龄：3岁</h><br>
+                        <h>性别：雄性</h><br>
+                        <h>描述：小黑是一只非常友好的狗狗，喜欢和人互动，适合有孩子的家庭。</h><br>
+                        <button onclick="showAdoptionForm('小黑')">领养</button>
+                    </div>
+                </div>
+                <div class="animal-card">
+                    <img src="../image/ly5.png" alt="动物图片">
+                    <div class="details">
+                        <h3>小白</h3>
+                        <h>种类：猫</h><br>
+                        <h>年龄：2岁</h><br>
+                        <h>性别：雌性</h><br>
+                        <h>描述：小白是一只非常温柔的猫咪，喜欢安静的环境，适合单身人士。</h><br>
+                        <button onclick="showAdoptionForm('小白')">领养</button>
+                    </div>
+                </div>
+                <div class="animal-card">
+                    <img src="../image/ly2.png" alt="动物图片">
+                    <div class="details">
+                        <h3>小灰</h3>
+                        <h>种类：兔子</h><br>
+                        <h>年龄：1岁</h><br>
+                        <h>性别：雄性</h><br>
+                        <h>描述：小灰是一只活泼的兔子，需要较大的活动空间。</h><br>
+                        <button onclick="showAdoptionForm('小灰')">领养</button>
+                    </div>
+                </div>
+                <div class="animal-card">
+                    <img src="../image/ly6.png" alt="动物图片">
+                    <div class="details">
+                        <h3>小花</h3>
+                        <h>种类：猫</h><br>
+                        <h>年龄：1岁</h><br>
+                        <h>性别：雌性</h><br>
+                        <h>描述：小花是一只非常活泼的猫咪，喜欢玩耍，适合年轻家庭。</h><br>
+                        <button onclick="showAdoptionForm('小花')">领养</button>
+                    </div>
+                </div>
+                <div class="animal-card">
+                    <img src="../image/ly3.png" alt="动物图片">
+                    <div class="details">
+                        <h3>大黄</h3>
+                        <h>种类：狗</h><br>
+                        <h>年龄：2岁</h><br>
+                        <h>性别：雄性</h><br>
+                        <h>描述：大黄是一只非常忠诚的狗狗，喜欢和人玩，非常热情，适合有经验的养狗家庭。</h><br>
+                        <button onclick="showAdoptionForm('大黄')">领养</button>
+                    </div>
+                </div>
+                <div class="animal-card">
+                    <img src="../image/ly4.png" alt="动物图片">
+                    <div class="details">
+                        <h3>小绿</h3>
+                        <h>种类：乌龟</h><br>
+                        <h>年龄：2岁</h><br>
+                        <h>性别：未知</h><br>
+                        <h>描述：小绿是一只非常安静的乌龟，需要一个温暖的家和足够的阳光。</h><br>
+                        <button onclick="showAdoptionForm('小绿')">领养</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 注意事项 -->
+            <div id="bigdiv">
+                <!--喂养知识-->
+                <div id="div4">
+                    <div class="h4">
+                        <span>喂养知识</span>
+                    </div>
+                    <div class="c3">
+                        <a href="./knowledge1.html">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>
+                            狗耳朵向后贴是开心吗 还要根据狗狗的表情来确定</h2>
+                        <div class="ww">狗耳朵向后贴是狗狗很开心；狗耳朵向后贴是狗狗比较紧张；狗耳朵向后贴是狗狗心态比较放松，狗耳朵向后贴的原因，具体还要根据狗狗当下的面部表情和身体状况来看。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2><i class="fa-solid fa-cat"></i>奶猫断奶 多大的小猫可以吃猫粮</h2>
+                        <div class="ww">1个月后的小猫可以吃猫粮，但一定注意不要一次性更换饮食，小猫的肠胃较弱，免疫力非常差，对新食物的接受度低，突然喂食大量猫粮，容易使其出现拉稀情况，后果会很严重。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>狗狗不能吃巧克力 那狗能吃代可可脂吗</h2>
+                        <div class="ww">狗不能吃代可可脂，虽然代可可脂巧克力严格意义上算不巧克力，但是代可可脂食品含有大量的反式脂肪酸，糖分，及食品添加剂，偶尔吃一点倒是可能不会引发急性中毒，但是长期饲喂是不科学的。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>柴犬可以吃芒果吗 是不是突然觉得自家的狗狗什么都吃</h2>
+                        <div class="ww">柴犬可以吃芒果，狗狗属于杂食性动物，是可以吃芒果的，给狗狗吃芒果时只能给它吃一点点果肉，果皮跟果核一定不能给狗狗吃，狗狗吃了果皮，很容易引起胃肠道出现问题，果核容易堵塞狗狗的肠道。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>狗狗吃了韭菜就会中毒 吃多少韭菜会致死</h2>
+                        <div class="ww">狗狗吃了韭菜就会中毒，吃多少韭菜会致死，不同狗狗的体质不同，体质不好的狗狗或是小狗，吃一口就可能致死，韭菜中含有大量硫化物，会破坏狗狗血液中的成分，引起狗狗贫血，甚至还会损害狗狗骨髓。</div></a>
+                    </div>
+                    
+                </div>
+                <!--健康知识-->
+                <div id="div5">
+                    <div class="h4">
+                        <span>健康知识</span>
+                        
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>狗身上有异味如何消除 对此需要重视起来</h2>
+                        <div class="ww">小狗身上的味道可以使用可以消除小狗体味的狗粮或者其它去除狗狗体味的产品，但如果是没有打完疫苗的小狗身上有味道则不能通过洗澡去除，可以用被温水打湿但比较干的毛巾慢慢擦它的身体，打完疫苗的小狗可以定期洗澡。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2><i class="fa-solid fa-cat"></i>猫咪会换牙吗 猫换牙是从几个月开始</h2>
+                        <div class="ww">猫换牙的时间是从4个月开始到6个月的时候，换牙可能会引起猫咪短时间的食欲不振，通常2-3周大的猫咪会开始长乳切齿，大约4到6个月就会开始换牙，这时长出的切齿会替代乳切齿。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2><i class="fa-solid fa-cat"></i>被蚊子咬了 花露水猫咪能不能闻</h2>
+                        <div class="ww">露水猫咪不能闻，猫怕花露水的味道，因为猫咪最怕刺激性气味，它的鼻子比较敏感，而花露水的味道比较刺鼻，所以猫咪是讨厌花露水的，建议养猫的家庭不要使用含有菊花脂肪和乙醇的杀虫剂。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2><i class="fa-solid fa-cat"></i>新成员带到家觉得很脏 两个月的猫咪可以洗澡不</h2>
+                        <div class="ww">两个月的猫咪不可以洗澡，这个年龄段的猫咪刚刚开始接种疫苗，或者还没有开始接种疫苗，这个时候给猫咪洗澡，很容易诱发病毒性传染病，会严重威胁猫咪的身体健康，建议先给猫咪接种疫苗，然后再洗澡。</div></a>
+                    </div>
+                    <div class="c3">
+                        <a href="#">
+                        <h2>
+                            <i class="fa-solid fa-shield-dog"></i>给狗狗洗完澡后 还一直在不停发抖正常吗</h2>
+                        <div class="ww">狗洗完澡发抖不会死，狗狗洗完澡后因为体表温度湿度改变，洗澡时的害怕情绪等都可能会发抖，但是这些情况只是生理性的原因引起了狗狗的发抖，并不会出现狗狗急性死亡的。</div></a>
+                    </div>
+                    
+                </div>
+            </div>
+    <!-- 领养申请表弹窗 -->
+    <div id="adoptionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAdoptionForm()">&times;</span>
+            <h2>领养申请表</h2>
+            <form id="adoptionForm">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">联系电话：</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">地址：</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="animal">选择领养的动物：</label>
+                <input type="text" id="animal" name="animal" readonly>
+
+                <label for="message">申请理由：</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="提交申请">
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        关于我们&nbsp;&nbsp;|&nbsp;&nbsp;志愿服务&nbsp;&nbsp;|&nbsp;&nbsp;广告服务&nbsp;&nbsp;|&nbsp;&nbsp;加入平台&nbsp;&nbsp;|&nbsp;&nbsp;网站声明&nbsp;&nbsp;|&nbsp;&nbsp;版权声明<br>
+        保护动物，人人有责。每一只动物，都是地球的宝贵财富。<br>
+        “动物守护者网战，真诚邀请每一位热心人士加入我们，共同保护动物！”“每一个生命都值得被守护，让我们携手，为动物们创造一个更美好的未来。”<br>
+“您的参与，就是对自然与生命的承诺。加入我们，成为动物的守护者！”
+    </div>
+   
+</body>
+</html>

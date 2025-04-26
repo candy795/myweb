@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿者报名</title>
+    <link rel="stylesheet" href="../css/Reset.css">
+    <link rel="stylesheet" href="../css/baoming.css">
+    <link rel="stylesheet" href="../css/all.css"
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <div id="branding">
+                <h1>动物守护者</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="help.html">帮助中心</a></li>
+                    <li class="current"><a href="about.html">了解网站</a></li>
+                    <li><a href="lianxi.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        
+        <h1>志愿者报名表</h1>
+        <form id="volunteerForm" action="submit_form.php" method="post">
+            <label for="name"><i class="fa-solid fa-user"></i>姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><i class="fa-solid fa-envelope"></i>邮箱：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone"><i class="fa-solid fa-phone"></i>联系电话：</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="age">年龄：</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="gender"><i class="fa-solid fa-venus"></i><i class="fa-solid fa-mars"></i>性别：</label>
+            <select id="gender" name="gender">
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+
+            <label for="message"><i class="fa-solid fa-pen-to-square"></i>个人简介：</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="提交">
+        </form>
+        
+    </div>
+    <footer>
+        <h>&copy; 2025 动物守护者</h>
+    </footer>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><strong>报名成功！</strong></p>
+            <p>感谢您的参与，我们会尽快与您联系。</p>
+        </div>
+    </div>
+
+    <script>
+        // 获取表单元素和弹窗元素
+        const form = document.getElementById('volunteerForm');
+        const modal = document.getElementById('myModal');
+        const closeBtn = document.querySelector('.close');
+
+        // 添加提交事件监听器
+        form.addEventListener('submit', function(event) {
+            // 阻止表单的默认提交行为
+            event.preventDefault();
+
+            // 显示弹窗
+            modal.style.display = 'block';
+        });
+
+        // 关闭弹窗
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        };
+
+        // 点击弹窗外部时关闭弹窗
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

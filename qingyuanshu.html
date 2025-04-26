@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>保护动物请愿书 - 您的签名可以改变它们的命运</title>
+  <style>
+    #footer{
+      padding: 25px;
+      text-align: center;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.2);
+      line-height: 2;
+    }
+    body {
+      font-family: 'Microsoft YaHei', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #4CAF50;
+    }
+    h1 {
+      color: #2E7D32;
+    }
+    .petition-content {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .signature-form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #388E3C;
+    }
+    .signature-count {
+      text-align: center;
+      font-size: 18px;
+      margin: 20px 0;
+      color: #2E7D32;
+      font-weight: bold;
+    }
+    .animal-facts {
+      margin-top: 40px;
+      font-style: italic;
+      color: #666;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>保护动物请愿书</h1>
+  <p>您的签名可以改变它们的命运</p>
+</header>
+
+<div class="petition-content">
+  <h2>关于本次请愿</h2>
+  <p>每年，数以百万计的动物因栖息地破坏、非法捕猎和气候变化而遭受痛苦甚至灭绝。我们呼吁政府和企业采取以下措施：</p>
+
+  <ul>
+    <li>加强对野生动物非法贸易的打击力度</li>
+    <li>扩大自然保护区面积，保护濒危物种栖息地</li>
+    <li>禁止使用动物进行不必要的化妆品测试</li>
+    <li>加大对动物保护组织的资金支持</li>
+    <li>完善动物福利法律法规</li>
+  </ul>
+
+  <p>每一个签名都代表着我们对动物保护的承诺。请加入我们，为无声的它们发声！</p>
+</div>
+
+<div class="signature-count">
+  已有 <strong>12,487</strong> 人签署这份请愿书
+</div>
+
+<div class="signature-form">
+  <h2>签署请愿书</h2>
+  <form id="petitionForm">
+    <div class="form-group">
+      <label for="name">姓名*</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">电子邮箱*</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="country">国家/地区</label>
+      <select id="country" name="country">
+        <option value="china">中国</option>
+        <option value="other">其他国家/地区</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="comment">留言 (可选)</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="为什么保护动物对您很重要？"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" name="newsletter" checked> 我愿意接收关于动物保护的最新消息和行动呼吁
+      </label>
+    </div>
+
+    <button type="submit">签署请愿书</button>
+  </form>
+</div>
+
+<div class="animal-facts">
+  <h3>你知道吗？</h3>
+  <p>根据世界自然基金会(WWF)的数据，自1970年以来，全球野生动物种群数量平均下降了68%。每天约有150-200种物种灭绝，速度是自然灭绝率的1000倍以上。</p>
+</div>
+
+
+<script>
+  document.getElementById('petitionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('感谢您的签署！您的支持对动物保护事业至关重要。');
+    // 这里可以添加表单提交的AJAX代码
+    this.reset();
+  });
+</script>
+<div id="footer">
+  关于我们&nbsp;&nbsp;|&nbsp;&nbsp;志愿服务&nbsp;&nbsp;|&nbsp;&nbsp;广告服务&nbsp;&nbsp;|&nbsp;&nbsp;加入平台&nbsp;&nbsp;|&nbsp;&nbsp;网站声明&nbsp;&nbsp;|&nbsp;&nbsp;版权声明<br>
+  保护动物，人人有责。每一只动物，都是地球的宝贵财富。<br>
+  “动物守护者网战，真诚邀请每一位热心人士加入我们，共同保护动物！”“每一个生命都值得被守护，让我们携手，为动物们创造一个更美好的未来。”<br>
+  “您的参与，就是对自然与生命的承诺。加入我们，成为动物的守护者！”
+</div>
+</body>
+
+</html>
